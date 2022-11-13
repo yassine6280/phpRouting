@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: #f7f7f7;
+}
+main{
+    margin: auto;
+    max-width: 500px;
+    padding: 1rem;
+}
+main h1{
+    color: #61dafb;
+}
+nav{
+    background: #20232a;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    font-weight: 400;
+    max-width: 500px;
+    margin: auto;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 0 1rem;
+    justify-content:center;
+}
+nav ul li{
+    list-style: none;
+    padding: 1rem 0;   
+    width: 74px;
+
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    font-style: normal;
+    height: 100%;
+    position: relative;
+    text-align: center;
+}
+.active-link{
+    color: rgb(97, 218, 251)!important;
+}
+.active-link::after{
+    content: "";
+    position: absolute;
+    width: 74px;
+    height: 4px;
+    background: rgb(97, 218, 251);
+    bottom: -15px;
+    left: -15px;
+}
